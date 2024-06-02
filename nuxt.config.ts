@@ -3,4 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   // SPAで出力したいからSSRせずにnuxt generateを実行する
   ssr: false,
+  css: [
+    'normalize.css/normalize.css'
+  ]
 })
