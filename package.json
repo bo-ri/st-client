@@ -7,12 +7,17 @@
     "local": "npm run generate && npx serve .output/public",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "codegen": "openapi-typescript \"https://stoplight.io/api/v1/projects/spacetraders/spacetraders/nodes/reference/SpaceTraders.json?fromExportButton=true&snapshotType=http_service&deref=optimizedBundle\" -o ./api.d.ts"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
     "nuxt": "^3.11.2",
+    "openapi-fetch": "^0.9.7",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^6.7.6"
   }
 }
