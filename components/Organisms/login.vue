@@ -12,36 +12,37 @@
 </template>
 
 <script setup>
-import { reactive, computed } from "vue";
+  import { reactive, computed } from 'vue';
 
-const agent_info = reactive({
-  token: undefined
-});
+  const agent_info = reactive({
+    token: undefined,
+  });
 
-const isValidatedToken = computed(() => {
-  if (agent_info.token && agent_info.token.length > 1) {
-    return true;
-  }
-  return false;
-});
+  const isValidatedToken = computed(() => {
+    if (agent_info.token && agent_info.token.length > 1) {
+      return true;
+    }
+    return false;
+  });
 
-const onClicklogin = async () => {
-  // call api
-  console.log(`${agent_info.token}`);
-}
+  const onClicklogin = async () => {
+    // call api
+    console.log(`${agent_info.token}`);
+  };
 </script>
 
 <style>
-h2, p {
-  color: white;
-  text-align: center;
-}
+  h2,
+  p {
+    color: white;
+    text-align: center;
+  }
 
-.loginButton {
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 40px;
-  width: 80px;
-}
+  .loginButton {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 40px;
+    width: 80px;
+  }
 </style>

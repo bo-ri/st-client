@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "codegen": "openapi-typescript \"https://stoplight.io/api/v1/projects/spacetraders/spacetraders/nodes/reference/SpaceTraders.json?fromExportButton=true&snapshotType=http_service&deref=optimizedBundle\" -o ./api.d.ts"
+    "codegen": "openapi-typescript \"https://stoplight.io/api/v1/projects/spacetraders/spacetraders/nodes/reference/SpaceTraders.json?fromExportButton=true&snapshotType=http_service&deref=optimizedBundle\" -o ./api.d.ts",
+    "prettier": "prettier . --write"
   },
   "dependencies": {
     "js-cookie": "^3.0.5",
@@ -19,7 +20,16 @@
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@types/eslint__js": "^8.42.3",
     "@types/js-cookie": "^3.0.6",
-    "openapi-typescript": "^6.7.6"
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "globals": "^15.4.0",
+    "openapi-typescript": "^6.7.6",
+    "prettier": "^3.3.1",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.12.0"
   }
 }

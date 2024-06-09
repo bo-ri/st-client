@@ -3,9 +3,9 @@
 </template>
 
 <style>
-h1 {
-  height: 8vh;
-  margin: 0;
-  padding: 0;
-}
+  h1 {
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+  }
 </style>
